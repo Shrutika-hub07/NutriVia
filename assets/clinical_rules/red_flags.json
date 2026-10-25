@@ -1,0 +1,125 @@
+{
+  "version": "1.0.0",
+  "disclaimer": "Emergency escalation rules. Hardcoded and deterministic. LLM cannot override.",
+  "flags": [
+    {
+      "id": "cardiac_emergency",
+      "severity": "CRITICAL",
+      "keywords": {
+        "en": ["chest pain", "chest tightness", "chest pressure", "pain in jaw", "pain down left arm", "arm pain", "sudden breathlessness", "collapsed", "fainting"],
+        "hi": ["छाती में दर्द", "सीने में दर्द", "सीने में दबाव", "जबड़े में दर्द", "बाएं हाथ में दर्द", "अचानक सांस फूलना", "बेहोश होना", "चक्कर खाकर गिरना"],
+        "mr": ["छातीत दुखणे", "छातीत भरून येणे", "छातीवर दाब", "हनुवटीत दुखणे", "डाव्या हातात कळ", "अचानक धाप लागणे", "भोवळ येऊन पडणे", "बेहोश"]
+      },
+      "title": {
+        "en": "Urgent Medical Attention Needed",
+        "hi": "तत्काल चिकित्सा सहायता आवश्यक है",
+        "mr": "तातडीने वैद्यकीय मदतीची गरज आहे"
+      },
+      "message": {
+        "en": "You mentioned severe chest discomfort, spreading pain, or sudden breathlessness. Women's heart symptoms can be subtle. Please call emergency services (112) or go to the nearest hospital immediately.",
+        "hi": "आपने सीने में तेज दर्द, फैलता हुआ दर्द या अचानक सांस फूलने की बात कही है। महिलाओं में हृदय के लक्षण अलग हो सकते हैं। कृपया तुरंत आपातकालीन नंबर 112 पर कॉल करें या नजदीकी अस्पताल जाएं।",
+        "mr": "तुम्ही छातीत दुखणे, कळ पसरणे किंवा अचानक धाप लागण्याचा उल्लेख केला आहे. महिलांमध्ये हृदयाची लक्षणे वेगळी असू शकतात. कृपया त्वरित १०२/११२ वर संपर्क करा किंवा जवळच्या रुग्णालयात जा."
+      },
+      "emergency_number": "112",
+      "action_type": "EMERGENCY_MODAL",
+      "call_prompt": {
+        "en": "Call 112 Now",
+        "hi": "तुरंत 112 पर कॉल करें",
+        "mr": "आत्ताच 112 वर कॉल करा"
+      }
+    },
+    {
+      "id": "stroke_symptoms",
+      "severity": "CRITICAL",
+      "keywords": {
+        "en": ["face drooping", "arm weakness", "trouble speaking", "slurred speech", "sudden numbness one side", "vision loss", "sudden worst headache"],
+        "hi": ["चेहरा लटकना", "हाथ में कमजोरी", "बोलने में दिक्कत", "आवाज लड़खड़ाना", "एक तरफ सुन्न पड़ना", "आंखों से दिखना बंद", "अचानक सिर में भयानक दर्द"],
+        "mr": ["तोंड वाकडे होणे", "हातातली ताकद जाणे", "बोलताना जीभ अडखळणे", "एका बाजूला बधिरता", "दिसेनासे होणे", "अचानक असह्य डोकेदुखी"]
+      },
+      "title": {
+        "en": "Possible Stroke Symptoms",
+        "hi": "स्ट्रोक (पक्षाघात) के संभावित लक्षण",
+        "mr": "पक्षाघाताची (स्ट्रोक) संभाव्य लक्षणे"
+      },
+      "message": {
+        "en": "Sudden weakness in the face or limbs, slurred speech, or vision changes require instant medical evaluation. Every minute counts.",
+        "hi": "चेहरे या अंगों में अचानक कमजोरी, आवाज का लड़खड़ाना या नजर धुंधलाना तुरंत अस्पताल पहुंचने के संकेत हैं।",
+        "mr": "चेहऱ्यावर किंवा हातात अचानक अशक्तपणा, बोलण्यात अडथळा किंवा अचानक दृष्टी जाणे ही तातडीने डॉक्टरकडे जाण्याची चिन्हे आहेत."
+      },
+      "emergency_number": "112",
+      "action_type": "EMERGENCY_MODAL",
+      "call_prompt": {
+        "en": "Call Ambulance",
+        "hi": "एम्बुलेंस बुलाएं",
+        "mr": "रुग्णवाहिका बोलवा"
+      }
+    },
+    {
+      "id": "postmenopausal_bleeding",
+      "severity": "HIGH",
+      "keywords": {
+        "en": ["bleeding after menopause", "period after 1 year", "spotting after menopause", "soaking pad every hour", "heavy clots with dizziness"],
+        "hi": ["मेनोपॉज के बाद ब्लीडिंग", "माहवारी बंद होने के बाद खून आना", "हर घंटे पैड बदलना", "चक्कर के साथ बड़े थक्के"],
+        "mr": ["मासिक पाळी बंद झाल्यावर पुन्हा रक्तस्त्राव", "मेनोपॉजनंतर रक्त येणे", "दर तासाला पॅड भरणे", "चक्कर येऊन रक्तस्त्राव"]
+      },
+      "title": {
+        "en": "Gynaecologist Review Recommended Today",
+        "hi": "आज ही स्त्री रोग विशेषज्ञ से मिलें",
+        "mr": "आजच स्त्रीरोग तज्ज्ञांचा सल्ला घ्या"
+      },
+      "message": {
+        "en": "Any bleeding after menopause (more than 12 months without a period) or soaking through a pad every 1-2 hours needs prompt medical evaluation by a gynaecologist. While often benign, it must be officially checked.",
+        "hi": "माहवारी पूरी तरह बंद होने के 12 महीने बाद कोई भी ब्लीडिंग होना, या बहुत अधिक खून आना सामान्य नहीं है। कृपया जल्द से जल्द अपनी डॉक्टर को दिखाएं।",
+        "mr": "मासिक पाळी पूर्ण थांबल्यानंतर (१२ महिने उलटून गेल्यावर) थोडाही रक्तस्त्राव होणे किंवा दर तासाला पॅड बदलावा लागणे यासाठी स्त्रीरोगतज्ज्ञांची तपासणी करून घेणे अत्यावश्यक आहे."
+      },
+      "action_type": "URGENT_DOCTOR_ALERT"
+    },
+    {
+      "id": "severe_bone_fracture",
+      "severity": "HIGH",
+      "keywords": {
+        "en": ["fell and cannot walk", "severe bone pain after fall", "heard a crack", "hip pain after slip", "wrist deformed after fall"],
+        "hi": ["गिरने के बाद चल नहीं पा रही", "हड्डी में भयानक दर्द", "फिसलने के बाद कूल्हे में दर्द", "हड्डी टूटने की आवाज"],
+        "mr": ["पडल्यानंतर चालता येत नाही", "हाडात असह्य वेदना", "घसरून कंबरेचे/मांडीचे हाड दुखणे", "हाताचे हाड मोडल्याची भीती"]
+      },
+      "title": {
+        "en": "Suspected Fracture - Keep Still",
+        "hi": "हड्डी में चोट या फ्रैक्चर का संदेह",
+        "mr": "हाड मोडल्याची (फ्रॅक्चर) शक्यता"
+      },
+      "message": {
+        "en": "After midlife, bones can become fragile due to osteopenia or osteoporosis. If you fell and have severe bone pain, do not put weight on the limb and seek an X-ray or medical review.",
+        "hi": "उम्र के इस पड़ाव में हड्डियां कमजोर हो सकती हैं। गिरने के बाद तेज दर्द होने पर उस अंग पर जोर न दें और तुरंत एक्स-रे करवाएं।",
+        "mr": "पन्नाशीनंतर हाडांची घनता कमी होऊ शकते. पडल्यानंतर तीव्र वेदना असल्यास त्या भागावर जोर देऊ नका आणि लगेच एक्स-रे तपासणीसाठी डॉक्टरांकडे जा."
+      },
+      "action_type": "URGENT_DOCTOR_ALERT"
+    },
+    {
+      "id": "mental_health_crisis",
+      "severity": "CRITICAL",
+      "keywords": {
+        "en": ["end my life", "suicide", "want to die", "cannot go on", "no reason to live", "harm myself", "worthless"],
+        "hi": ["जीने का मन नहीं है", "आत्महत्या", "खुद को नुकसान", "मर जाना चाहती हूँ", "जिंदगी से तंग आ चुकी हूँ"],
+        "mr": ["जगावेसे वाटत नाही", "आत्महत्या", "स्वतःला संपवणे", "मरावेसे वाटते", "आयुष्याचा कंटाळा आलाय"]
+      },
+      "title": {
+        "en": "You Are Not Alone - Support Is Available",
+        "hi": "आप अकेली नहीं हैं - हम आपके साथ हैं",
+        "mr": "तुम्ही एकट्या नाही आहात - मदत उपलब्ध आहे"
+      },
+      "message": {
+        "en": "Please know that your feelings matter, and help is available right now. You can speak confidentially with a trained counselor at Tele-MANAS (Government of India) 24x7, toll-free. Please reach out to someone who cares.",
+        "hi": "आपकी जिंदगी बहुत अनमोल है। आप इस मुश्किल वक्त में अकेली नहीं हैं। भारत सरकार की राष्ट्रीय टेली-मानस हेल्पलाइन पर मुफ्त और गोपनीय सहायता उपलब्ध है। कृपया अभी कॉल करें।",
+        "mr": "तुमचे आयुष्य अत्यंत महत्त्वाचे आहे. तुम्ही या क्षणी एकट्या नाही आहात. भारत सरकारच्या टेलि-मानस या मोफत हेल्पलाईनवर २४ तास समुपदेशक उपलब्ध असतात. कृपया संपर्क करा."
+      },
+      "emergency_number": "14416",
+      "helpline_name": "Tele-MANAS (Govt of India)",
+      "action_type": "CRISIS_SUPPORT_MODAL",
+      "call_prompt": {
+        "en": "Call Tele-MANAS 14416",
+        "hi": "टेली-मानस 14416 पर कॉल करें",
+        "mr": "टेलि-मानस 14416 वर कॉल करा"
+      }
+    }
+  ]
+}

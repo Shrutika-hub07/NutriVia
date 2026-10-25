@@ -1,0 +1,90 @@
+{
+  "version": "1.0.0",
+  "disclaimer": "Clinician-style knowledge cards synthesized from peer-reviewed Indian and global guidelines (ICMR-NIN, FOGSI, IMS, WHO). Non-prescriptive wellness and education only.",
+  "cards": [
+    {
+      "id": "kc_iron_absorption",
+      "category": "iron",
+      "title": {"en": "Iron Bioavailability & Vitamin C Pairing", "hi": "आयरन का अवशोषण और विटामिन C की जोड़ी", "mr": "लोहाचे शोषण आणि व्हिटॅमिन C ची जोड"},
+      "summary": {"en": "Plant-based non-heme iron requires an acidic environment for absorption. Squeezing half a lemon or eating amla alongside dal or nachni doubles iron absorption.", "hi": "पौधों से मिलने वाले आयरन को सोखने के लिए खट्टे फल जैसे नींबू या आंवला बहुत मददगार होते हैं। दाल या रोटी पर नींबू निचोड़ने से दोगुना फायदा होता है।", "mr": "शाकाहारी आहारातील लोह शरीरात शोषण्यासाठी लिंबू किंवा आवळा उत्तम ठरतो. वरण किंवा नाचणीच्या भाकरीसोबत लिंबू पिळल्याने लोहाचे शोषण दुप्पट होते."},
+      "source": "ICMR-NIN Dietary Guidelines for Indians (2020)"
+    },
+    {
+      "id": "kc_tea_iron_gap",
+      "category": "iron",
+      "title": {"en": "Why Chai With Meals Blocks Iron", "hi": "भोजन के साथ चाय पीने का नुकसान", "mr": "जेवणासोबत चहा पिण्याचे दुष्परिणाम"},
+      "summary": {"en": "Polyphenols and tannins in Indian chai bind tightly with iron in the gut, reducing absorption by up to 60%. Keep a 45-60 minute window between tea and food.", "hi": "चाय में मौजूद टैनिन खाने के आयरन को बांध लेते हैं, जिससे 60% तक आयरन बेकार निकल जाता है। भोजन और चाय में 1 घंटे का अंतर रखें।", "mr": "चहातील टॅनिन अन्नातील लोहाला बांधून ठेवतात, ज्यामुळे ६०% लोह वाया जाते. जेवण आणि चहामध्ये किमान १ तासाचे अंतर ठेवा."},
+      "source": "Indian Menopause Society (IMS) Clinical Guidelines"
+    },
+    {
+      "id": "kc_b12_vegetarian",
+      "category": "b12",
+      "title": {"en": "Vitamin B12 in Indian Vegetarian Diets", "hi": "भारतीय शाकाहारी भोजन में विटामिन B12", "mr": "भारतीय शाकाहारी आहारातील व्हिटॅमिन B12"},
+      "summary": {"en": "Vitamin B12 is synthesized by microorganisms and absent in unfortified plant foods. Regular curd, paneer, fortified foods, or doctor-recommended supplementation is essential for Indian vegetarians.", "hi": "पेड़-पौधों के भोजन में B12 नहीं होता। शाकाहारी बहनों के लिए नियमित दही, पनीर, फोर्टिफाइड खाद्य पदार्थ या डॉक्टर की सलाह से सप्लीमेंट जरूरी है।", "mr": "वनस्पतीजन्य अन्नात B12 नैसर्गिकरित्या नसते. शाकाहारी महिलांनी ताजे दही, पनीर आणि डॉक्टरांच्या सल्ल्याने योग्य पूरक आहार घेणे गरजेचे आहे."},
+      "source": "FOGSI Good Clinical Practice Recommendations"
+    },
+    {
+      "id": "kc_b12_nerve_tingling",
+      "category": "b12",
+      "title": {"en": "Pins, Needles & Burning Soles", "hi": "हाथ-पैरों में झनझनाहट और तलवों की जलन", "mr": "हात-पायात मुंग्या आणि तळपायांची आग"},
+      "summary": {"en": "B12 maintains the myelin sheath surrounding peripheral nerves. Deficiencies first present as peripheral neuropathy: burning soles at night and pins and needles.", "hi": "विटामिन B12 नसों की सुरक्षा परत को बनाए रखता है। इसकी कमी से रात को तलवों में जलन और पैरों में सुई चुभने जैसी झनझनाहट होती है।", "mr": "B12 मज्जासंस्थेच्या बाहेरील आवरणाचे रक्षण करते. याची कमतरता झाल्यास रात्री तळपायांची आग होणे व मुंग्या येणे ही पहिली लक्षणे दिसतात."},
+      "source": "Association of Physicians of India (API) Consensus"
+    },
+    {
+      "id": "kc_vit_d_sunlight",
+      "category": "vit_d",
+      "title": {"en": "Sun Exposure & Melanin in Indian Skin", "hi": "भारतीय त्वचा में धूप और विटामिन D", "mr": "भारतीय त्वचा आणि सूर्यप्रकाशातून व्हिटॅमिन D"},
+      "summary": {"en": "Higher melanin content in Indian skin filters UV-B rays, requiring 25-45 minutes of mid-day sun (11 AM to 2 PM) on face and arms for adequate endogenous synthesis.", "hi": "भारतीय त्वचा में मेलेनिन अधिक होने से धूप से विटामिन D धीरे बनता है। दोपहर 11 से 2 के बीच 25-30 मिनट धूप में रहना फायदेमंद है।", "mr": "भारतीय त्वचेतील मेलॅनिनमुळे सूर्यकिरणे शोषण्यास वेळ लागतो. यासाठी सकाळी ११ ते २ दरम्यान २५-३० मिनिटे हात व चेहऱ्यावर ऊन घेणे आवश्यक आहे."},
+      "source": "Endocrine Society of India (ESI) Position Statement"
+    },
+    {
+      "id": "kc_calcium_bone_density",
+      "category": "calcium",
+      "title": {"en": "Silent Bone Density Loss in Perimenopause", "hi": "मेनोपॉज़ में हड्डियों की अदृश्य कमजोरी", "mr": "मेनोपॉजमधील हाडांची अदृश्य झीज"},
+      "summary": {"en": "Estrogen withdrawal accelerates osteoclast activity, resorbing bone faster than formation. Up to 10-20% of bone mass can be lost in the 5 years following menopause without pain until a fracture occurs.", "hi": "मेनोपॉज में एस्ट्रोजन कम होने से हड्डियां तेजी से कमजोर होने लगती हैं। बिना किसी दर्द के हड्डियां अंदर से खोखली हो सकती हैं, इसलिए जांच जरूरी है।", "mr": "इस्ट्रोजेन कमी झाल्याने हाडे आतून पोकळ होऊ लागतात. हाड मोडेपर्यंत दुखणे जाणवत नाही, म्हणून DEXA तपासणी वेळेवर करणे हिताचे ठरते."},
+      "source": "Indian Menopause Society (IMS) Osteoporosis Consensus"
+    },
+    {
+      "id": "kc_magnesium_sleep",
+      "category": "magnesium",
+      "title": {"en": "Magnesium: The Calming Mineral for Sleep & Heart", "hi": "मैग्नीशियम: शांत नींद और धड़कन का साथी", "mr": "मॅग्नेशियम: शांत झोप आणि हृदयाचा सखा"},
+      "summary": {"en": "Magnesium regulates the parasympathetic nervous system and melatonin production. Pumpkin seeds, almonds, and leafy greens assist with night-time restlessness and leg cramps.", "hi": "मैग्नीशियम तंत्रिका तंत्र को शांत कर अच्छी नींद लाने में मदद करता है। कद्दू के बीज, बादाम और हरी पत्तेदार सब्जियां इसमें भरपूर होती हैं।", "mr": "मॅग्नेशियम मज्जासंस्थेला शांत करून गाढ झोप येण्यास मदत करते. भोपळ्याच्या बिया, बदाम आणि हिरव्या पालेभाज्यांमध्ये हे भरपूर असते."},
+      "source": "ICMR-NIN RDA Expert Group Guidelines"
+    },
+    {
+      "id": "kc_hormones_vs_deficiency",
+      "category": "differential",
+      "title": {"en": "Hormones vs. Nutritional Deficiency: The Overlap", "hi": "हार्मोनल बदलाव या पोषक तत्वों की कमी?", "mr": "संप्रेरकांचा बदल की पोषक घटकांची कमतरता?"},
+      "summary": {"en": "Fatigue, mood swings, and joint aches are shared across perimenopause, iron deficiency, low B12, and hypothyroidism. Objective blood testing (CBC, Ferritin, TSH, B12, Vit D) clarifies the underlying root cause.", "hi": "थकान, चिड़चिड़ापन और जोड़ों का दर्द मेनोपॉज और पोषण की कमी दोनों में होता है। खून की साधारण जांच से सही कारण का पता लगाया जा सकता है।", "mr": "थकवा, चिडचिड आणि सांधेदुखी ही मेनोपॉज तसेच व्हिटॅमिनच्या कमतरतेमुळेही होऊ शकते. योग्य रक्ततपासणीमुळे मूळ कारण स्पष्ट होते."},
+      "source": "FOGSI & IMS Collaborative Clinical Advisory"
+    },
+    {
+      "id": "kc_thyroid_menopause_mask",
+      "category": "thyroid",
+      "title": {"en": "How Thyroid Mimics Menopause Symptoms", "hi": "थायरॉइड और मेनोपॉज़ के मिलते-जुलते लक्षण", "mr": "थायरॉईड आणि मेनोपॉजमधील लक्षणांचे साधर्म्य"},
+      "summary": {"en": "Hypothyroidism presents with fatigue, weight gain, constipation, and chilliness—frequently mistaken for perimenopausal transition. Annual TSH screening is strongly recommended for women over 40.", "hi": "थायरॉइड में भी वजन बढ़ना, ठंड लगना और भारी थकान होती है जो मेनोपॉज जैसी लगती है। 40 की उम्र के बाद साल में एक बार TSH जांच जरूर कराएं।", "mr": "थायरॉईडमध्ये वजन वाढणे, जास्त थंडी वाजणे व सुस्ती येते. ४० वर्षांनंतर वर्षातून एकदा TSH तपासणी करून घेणे आवश्यक आहे."},
+      "source": "Indian Thyroid Society Consensus"
+    },
+    {
+      "id": "kc_fasting_protein_sparing",
+      "category": "fasting",
+      "title": {"en": "Balanced Fasting Plate: Avoiding the Sabudana Trap", "hi": "उपवास में संतुलित थाली: केवल साबूदाना नहीं", "mr": "उपवासाची पौष्टिक थाळी: साबुदाण्याचा अतिरेक टाळा"},
+      "summary": {"en": "Traditional fasting with pure deep-fried sabudana leads to sharp blood sugar spikes followed by crashes and exhaustion. Adding roasted peanuts, rajgira, curd, and cucumber stabilizes midlife blood sugar.", "hi": "उपवास में सिर्फ तला हुआ साबूदाना खाने से शुगर तेजी से बढ़कर गिरती है। राजगिरा, भुनी मूंगफली, दही और खीरा साथ लेने से ताकत बनी रहती है।", "mr": "फक्त तळलेला साबुदाणा खाल्ल्यास साखर वेगाने वाढून पुन्हा सुस्ती येते. त्याऐवजी राजगिरा, शेंगदाणे, ताजे दही आणि काकडी घेतल्यास ऊर्जा टिकून राहते."},
+      "source": "ICMR-NIN Special Dietary Considerations"
+    },
+    {
+      "id": "kc_atypical_heart_symptoms",
+      "category": "heart",
+      "title": {"en": "Atypical Cardiac Symptoms in Midlife Women", "hi": "महिलाओं में दिल के दौरे के छुपे हुए लक्षण", "mr": "महिलांमधील हृदयविकाराची छुपी लक्षणे"},
+      "summary": {"en": "Women frequently experience heart attacks without crushing central chest pain. Severe shortness of breath, unexplained indigestion, jaw/back ache, cold sweat, or sudden unusual fatigue require instant medical triage.", "hi": "महिलाओं में दिल के दौरे में सीने में तेज दर्द के बजाय जबड़े में दर्द, पीठ दर्द, अचानक सांस फूलना या ठंडा पसीना आ सकता है। इसे कभी नजरअंदाज न करें।", "mr": "महिलांमध्ये छातीत कळ येण्याऐवजी हनुवटीत दुखणे, पाठीत कळ, अचानक धाप लागणे किंवा गार घाम येणे अशी लक्षणे दिसू शकतात. ही धोक्याची घंटा समजावी."},
+      "source": "Cardiological Society of India (CSI) Women's Heart Initiative"
+    },
+    {
+      "id": "kc_ragi_nachni_power",
+      "category": "nutrition",
+      "title": {"en": "Nachni / Ragi: The Midlife Supergrain", "hi": "रागी / नाचनी: उम्र के इस पड़ाव का अमृत", "mr": "नाचणी: पन्नाशीतील महिलांसाठी वरदान"},
+      "summary": {"en": "Finger millet (Nachni/Ragi) contains ~344 mg of calcium per 100 g—over 3 times that of milk by dry weight—plus dietary fibre and low glycemic index carbohydrates.", "hi": "रागी (नाचनी) में दूध से 3 गुना ज्यादा कैल्शियम और भरपूर फाइबर होता है। नाचनी की भाकरी या डोसा हड्डियों को मजबूती देता है।", "mr": "नाचणीमध्ये १०० ग्रॅममागे तब्बल ३४४ मिग्रॅ कॅल्शियम असते. नाचणीची भाकरी किंवा धिरडे हाडांना बळकटी देण्यासाठी अत्यंत गुणकारी आहे."},
+      "source": "Indian Food Composition Tables (IFCT 2017)"
+    }
+  ]
+}

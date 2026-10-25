@@ -1,0 +1,212 @@
+{
+  "version": "1.0.0",
+  "disclaimer": "Deterministic points-based risk scoring rules. Evaluated locally. LLM only explains.",
+  "rules": [
+    {
+      "id": "anaemia",
+      "nutrient": "Iron",
+      "display_name": {
+        "en": "Iron & Anaemia Risk",
+        "hi": "आयरन और एनीमिया जोखिम",
+        "mr": "लोह आणि ॲनिमियाचा धोका"
+      },
+      "thresholds": {
+        "low": 0,
+        "medium": 4,
+        "high": 8
+      },
+      "factors": [
+        {"id": "diet_veg", "points": 2, "condition": "diet == 'vegetarian' || diet == 'vegan' || diet == 'jain'", "reason": {"en": "Plant-based iron (non-heme) has lower bioavailability (+2)", "hi": "शाकाहारी भोजन से आयरन का अवशोषण धीमा होता है (+2)", "mr": "शाकाहारी आहारातील लोहाचे शोषण कमी प्रमाणात होते (+2)"}},
+        {"id": "tea_with_meals", "points": 2, "condition": "habits.tea_with_meals == true", "reason": {"en": "Tannins in tea block non-heme iron absorption (+2)", "hi": "भोजन के साथ चाय पीने से आयरन सोखने में बाधा आती है (+2)", "mr": "जेवणासोबत चहा पिल्यामुळे लोहाचे शोषण अडखळते (+2)"}},
+        {"id": "symptom_fatigue", "points": 2, "condition": "symptoms.contains('fatigue')", "reason": {"en": "Persistent fatigue or morning exhaustion reported (+2)", "hi": "लगातार थकान महसूस होना (+2)", "mr": "सतत थकवा किंवा अशक्तपणा जाणवणे (+2)"}},
+        {"id": "symptom_breathless", "points": 2, "condition": "symptoms.contains('breathlessness_on_stairs')", "reason": {"en": "Breathlessness on mild exertion (+2)", "hi": "सीढ़ियां चढ़ने पर सांस फूलना (+2)", "mr": "जिने चढताना धाप लागणे (+2)"}},
+        {"id": "symptom_hairfall", "points": 1, "condition": "symptoms.contains('hair_fall')", "reason": {"en": "Hair shedding and brittle nails (+1)", "hi": "बाल झड़ना और नाखूनों का कमजोर होना (+1)", "mr": "केस गळणे आणि नखे ठिसूळ होणे (+1)"}},
+        {"id": "heavy_bleeding", "points": 3, "condition": "period.heavy_flow == true", "reason": {"en": "Heavy menstrual bleeding or prolonged periods (+3)", "hi": "माहवारी में अधिक खून जाना (+3)", "mr": "मासिक पाळीत जास्त रक्तस्त्राव होणे (+3)"}},
+        {"id": "symptom_pale", "points": 1, "condition": "symptoms.contains('pale_skin')", "reason": {"en": "Pale conjunctiva, tongue, or skin (+1)", "hi": "त्वचा या आंखों में पीलापन (+1)", "mr": "त्वचेवर किंवा डोळ्यांत फिकटपणा जाणवणे (+1)"}}
+      ],
+      "tests_to_discuss": [
+        "Complete Blood Count (CBC) with Haemoglobin",
+        "Serum Ferritin (Iron stores)",
+        "Total Iron Binding Capacity (TIBC)"
+      ],
+      "regional_foods": {
+        "veg": ["Nachni (Ragi) Bhakri / Dosa", "Palak / Methi Sabzi with Lemon", "Roasted Chana & Gul (Jaggery)"],
+        "non_veg": ["Mutton liver curry", "Egg yolk with sprouted moong", "Small freshwater fish curry"]
+      },
+      "why_midlife": {
+        "en": "Perimenopause often brings irregular, flooding cycles that deplete iron reserves faster than food replaces it.",
+        "hi": "पेरीमेनोपॉज में अनियमित और भारी माहवारी के कारण शरीर में संचित आयरन तेजी से खत्म हो जाता है।",
+        "mr": "पेरिमेनोपॉज दरम्यान पाळी अनियमित होऊन जास्त रक्तस्त्राव होतो, ज्यामुळे शरीरातील साठवलेले लोह वेगाने कमी होते."
+      }
+    },
+    {
+      "id": "vit_d",
+      "nutrient": "Vitamin D",
+      "display_name": {
+        "en": "Vitamin D & Bone Strength",
+        "hi": "विटामिन D और हड्डियों की मजबूती",
+        "mr": "व्हिटॅमिन D आणि हाडांची ताकद"
+      },
+      "thresholds": {
+        "low": 0,
+        "medium": 3,
+        "high": 6
+      },
+      "factors": [
+        {"id": "sun_exposure_low", "points": 3, "condition": "sunlight_exposure == 'low'", "reason": {"en": "Less than 20 minutes mid-day sun exposure (+3)", "hi": "दोपहर की धूप में 20 मिनट से कम समय बिताना (+3)", "mr": "दुपारच्या कोवळ्या उन्हात २० मिनिटांपेक्षा कमी वावर (+3)"}},
+        {"id": "covered_clothing", "points": 2, "condition": "clothing_coverage == 'full'", "reason": {"en": "Full coverage or predominantly indoor routine (+2)", "hi": "अधिकतर घर के अंदर रहना या पूरा शरीर ढंका होना (+2)", "mr": "घरात राहणे किंवा पूर्ण अंग झाकलेले कपडे असणे (+2)"}},
+        {"id": "symptom_bone_pain", "points": 2, "condition": "symptoms.contains('bone_joint_pain')", "reason": {"en": "Deep bone aches or persistent lower back/knee pain (+2)", "hi": "हड्डियों, घुटनों या कमर में गहरा दर्द (+2)", "mr": "हाडांमध्ये, गुडघ्यांत किंवा पाठीत सतत ठणक (+2)"}},
+        {"id": "symptom_muscle_weak", "points": 1, "condition": "symptoms.contains('muscle_ache')", "reason": {"en": "Muscle weakness or difficulty standing from squat (+1)", "hi": "मांसपेशियों में कमजोरी या उठने-बैठने में दिक्कत (+1)", "mr": "स्नायूंचा अशक्तपणा किंवा बसून उठताना त्रास (+1)"}},
+        {"id": "age_above_50", "points": 2, "condition": "age >= 50", "reason": {"en": "Post-50 reduction in skin Vitamin D synthesis (+2)", "hi": "50 के बाद त्वचा द्वारा विटामिन D बनाने की क्षमता घटना (+2)", "mr": "पन्नाशीनंतर त्वचेची व्हिटॅमिन D तयार करण्याची क्षमता मंदावणे (+2)"}}
+      ],
+      "tests_to_discuss": [
+        "25-Hydroxy Vitamin D [25(OH)D] Total",
+        "Serum Calcium",
+        "DEXA Bone Mineral Density Scan (for age 50+)"
+      ],
+      "regional_foods": {
+        "veg": ["Fortified Cow Milk or Curd (Dahi)", "Sun-exposed Mushrooms", "Til (Sesame) Ladoo"],
+        "non_veg": ["Rohu / Bangda (Mackerel) Curry", "Whole Eggs (with Yolk)", "Pomfret Fry"]
+      },
+      "why_midlife": {
+        "en": "Estrogen protects bone density; dropping estrogen in perimenopause accelerates bone mineral loss if Vitamin D is inadequate.",
+        "hi": "एस्ट्रोजन हार्मोन हड्डियों की रक्षा करता है; मेनोपॉज में इसके घटने से हड्डियां तेजी से कमजोर होने लगती हैं।",
+        "mr": "इस्ट्रोजेन संप्रेरक हाडांचे रक्षण करते; मेनोपॉजमध्ये इस्ट्रोजेन कमी झाल्यामुळे व्हिटॅमिन D च्या कमतरतेत हाडे वेगाने ठिसूळ होतात."
+      }
+    },
+    {
+      "id": "vit_b12",
+      "nutrient": "Vitamin B12",
+      "display_name": {
+        "en": "Vitamin B12 & Nerve Health",
+        "hi": "विटामिन B12 और नसों का स्वास्थ्य",
+        "mr": "व्हिटॅमिन B12 आणि मज्जासंस्थेचे आरोग्य"
+      },
+      "thresholds": {
+        "low": 0,
+        "medium": 3,
+        "high": 6
+      },
+      "factors": [
+        {"id": "strict_veg", "points": 3, "condition": "diet == 'vegetarian' || diet == 'vegan' || diet == 'jain'", "reason": {"en": "B12 is naturally found almost exclusively in animal foods (+3)", "hi": "शाकाहारी और जैन भोजन में B12 के प्राकृतिक स्रोत बहुत सीमित हैं (+3)", "mr": "शाकाहारी आहारातून B12 चे प्रमाण फार कमी मिळते (+3)"}},
+        {"id": "symptom_tingling", "points": 3, "condition": "symptoms.contains('tingling_numbness') || symptoms.contains('burning_soles')", "reason": {"en": "Pins and needles in feet/hands or burning soles (+3)", "hi": "हाथ-पैरों में झनझनाहट, सुन्नपन या तलवों में जलन (+3)", "mr": "हात-पायात मुंग्या येणे, बधीरपणा किंवा तळपायांची आग होणे (+3)"}},
+        {"id": "symptom_brain_fog", "points": 2, "condition": "symptoms.contains('brain_fog') || symptoms.contains('forgetfulness')", "reason": {"en": "Brain fog, memory lapses, or slowed thinking (+2)", "hi": "भूलने की आदत या सोचने में धुंधलापन (+2)", "mr": "स्मरणशक्तीत विसरभोळेपणा किंवा विचारात गोंधळ (+2)"}},
+        {"id": "antacid_use", "points": 2, "condition": "medicines.contains('omeprazole') || medicines.contains('pantoprazole')", "reason": {"en": "Long-term antacid/acid reducer use limits B12 absorption (+2)", "hi": "लंबे समय से एसिडिटी की दवा लेने से B12 नहीं पच पाता (+2)", "mr": "ऍसिडिटीच्या गोळ्या सतत घेतल्यामुळे B12 चे पचन होत नाही (+2)"}},
+        {"id": "metformin_use", "points": 2, "condition": "medicines.contains('metformin')", "reason": {"en": "Metformin therapy impairs ileal B12 uptake over time (+2)", "hi": "डायबिटीज की मेटफॉर्मिन दवा B12 के स्तर को घटा सकती है (+2)", "mr": "डायबिटीजची मेटफॉर्मिन गोळी शरीरातील B12 कमी करू शकते (+2)"}}
+      ],
+      "tests_to_discuss": [
+        "Serum Vitamin B12 level",
+        "Complete Blood Count (MCV for macrocytosis)",
+        "Serum Homocysteine"
+      ],
+      "regional_foods": {
+        "veg": ["Homemade A2 Curd (Dahi) / Chaas", "Paneer made from fresh milk", "Fortified Nutritional Yeast"],
+        "non_veg": ["Boiled Eggs", "Chicken Liver", "Fish curry"]
+      },
+      "why_midlife": {
+        "en": "Stomach acid production naturally declines with age, reducing our intrinsic factor needed to extract B12 from food.",
+        "hi": "उम्र बढ़ने के साथ पेट में एसिड कम बनता है, जिससे भोजन में से B12 निकालना और सोखना कठिन हो जाता है।",
+        "mr": "वय वाढते तसे पोटातील पाचक आम्ल कमी होते, ज्यामुळे अन्नातून B12 शोषून घेण्याची शरीराची क्षमता मंदावते."
+      }
+    },
+    {
+      "id": "calcium",
+      "nutrient": "Calcium",
+      "display_name": {
+        "en": "Calcium Balance",
+        "hi": "कैल्शियम संतुलन",
+        "mr": "कॅल्शियमचे संतुलन"
+      },
+      "thresholds": {
+        "low": 0,
+        "medium": 3,
+        "high": 6
+      },
+      "factors": [
+        {"id": "low_dairy", "points": 2, "condition": "dairy_servings == 0", "reason": {"en": "Little to no dairy or fortified plant alternatives (+2)", "hi": "दूध, दही या छाछ का कम सेवन (+2)", "mr": "दूध, दही किंवा ताक यांचा आहारात अभाव (+2)"}},
+        {"id": "symptom_cramps", "points": 2, "condition": "symptoms.contains('leg_pain_cramps')", "reason": {"en": "Frequent nocturnal leg cramps or twitching (+2)", "hi": "रात में पिंडलियों में ऐंठन या नस चढ़ना (+2)", "mr": "रात्री पायांच्या पोटऱ्यांमध्ये गोळे येणे किंवा चमक भरणे (+2)"}},
+        {"id": "perimenopause_stage", "points": 2, "condition": "stage == 'late_perimenopause' || stage == 'menopause'", "reason": {"en": "Post-menopausal drop in estrogen increases urinary calcium loss (+2)", "hi": "हार्मोनल बदलाव के कारण हड्डियों से कैल्शियम निकलना (+2)", "mr": "पाळी थांबण्याच्या काळात शरीरातून कॅल्शियमचा ऱ्हास वेगाने होतो (+2)"}}
+      ],
+      "tests_to_discuss": [
+        "Serum Total Calcium & Albumin",
+        "Serum Ionized Calcium",
+        "DEXA Scan (Bone Density)"
+      ],
+      "regional_foods": {
+        "veg": ["White Til (Sesame) Chikki / Tilkut", "Makhana roasted in ghee", "Curd (Dahi) & Chaas"],
+        "non_veg": ["Small fish eaten with soft bones", "Egg omelette with spinach"]
+      },
+      "why_midlife": {
+        "en": "In the 5-7 years following menopause, women can lose up to 20% of their bone density without noticing symptoms.",
+        "hi": "मेनोपॉज के बाद के शुरुआती 5-7 वर्षों में महिलाएं अपनी 20% तक हड्डियों की ताकत खो सकती हैं।",
+        "mr": "मेनोपॉजनंतरच्या पहिल्या ५-७ वर्षांत महिलांच्या हाडांमधील २०% पर्यंत घनता लक्षणे न दाखवता कमी होऊ शकते."
+      }
+    },
+    {
+      "id": "magnesium",
+      "nutrient": "Magnesium",
+      "display_name": {
+        "en": "Magnesium & Sleep Rhythm",
+        "hi": "मैग्नीशियम और नींद का संतुलन",
+        "mr": "मॅग्नेशियम आणि झोपेचा समतोल"
+      },
+      "thresholds": {
+        "low": 0,
+        "medium": 3,
+        "high": 6
+      },
+      "factors": [
+        {"id": "sleep_trouble", "points": 2, "condition": "symptoms.contains('sleep_trouble')", "reason": {"en": "Difficulty falling asleep or waking up frequently (+2)", "hi": "रात में बार-बार नींद टूटना या देर से नींद आना (+2)", "mr": "रात्री वारंवार जाग येणे किंवा शांत झोप न लागणे (+2)"}},
+        {"id": "symptom_palpitations", "points": 2, "condition": "symptoms.contains('palpitations')", "reason": {"en": "Sudden heart pounding or flutter at rest (+2)", "hi": "अचानक दिल की धड़कन तेज होना (+2)", "mr": "विश्रांतीच्या वेळी अचानक छातीत धडधड होणे (+2)"}},
+        {"id": "muscle_cramps", "points": 2, "condition": "symptoms.contains('leg_pain_cramps')", "reason": {"en": "Muscle spasms and twitching eyelids (+2)", "hi": "मांसपेशियों में अकड़न या आंखों का फड़कना (+2)", "mr": "स्नायू आखडणे किंवा डोळा लवणे (+2)"}}
+      ],
+      "tests_to_discuss": [
+        "Serum Magnesium",
+        "RBC Magnesium",
+        "Serum Electrolytes (Sodium, Potassium, Chloride)"
+      ],
+      "regional_foods": {
+        "veg": ["Pumpkin seeds (Bhaddu beej)", "Almonds (Badam) & Walnuts", "Spinach (Palak) Dal", "Banana"],
+        "non_veg": ["Fish fillet", "Chicken breast"]
+      },
+      "why_midlife": {
+        "en": "Magnesium acts on GABA receptors to calm the nervous system and relaxes vascular smooth muscles, crucial during hormonal fluctuations.",
+        "hi": "मैग्नीशियम नसों और मांसपेशियों को शांत कर रात की घबराहट और नींद की परेशानी में राहत देता है।",
+        "mr": "मॅग्नेशियम मज्जासंस्थेला शांत करते आणि स्नायूंना शिथिल करून रात्रीची अस्वस्थता कमी करते."
+      }
+    },
+    {
+      "id": "thyroid",
+      "nutrient": "Thyroid Function",
+      "display_name": {
+        "en": "Thyroid Health",
+        "hi": "थायरॉइड स्वास्थ्य",
+        "mr": "थायरॉईडचे आरोग्य"
+      },
+      "thresholds": {
+        "low": 0,
+        "medium": 4,
+        "high": 7
+      },
+      "factors": [
+        {"id": "unexplained_weight", "points": 2, "condition": "symptoms.contains('waist_weight_gain')", "reason": {"en": "Rapid unexplained weight gain (+2)", "hi": "बिना कारण तेजी से वजन बढ़ना (+2)", "mr": "विनाकारण वजन किंवा पोटाचा घेर वाढणे (+2)"}},
+        {"id": "extreme_fatigue", "points": 2, "condition": "symptoms.contains('fatigue') && symptoms.contains('weakness')", "reason": {"en": "Sluggishness despite adequate sleep (+2)", "hi": "पूरी नींद के बाद भी भारी आलस व सुस्ती (+2)", "mr": "पूर्ण झोप घेऊनही प्रचंड आळस आणि मरगळ (+2)"}},
+        {"id": "cold_intolerance", "points": 2, "condition": "symptoms.contains('burning_soles') == false", "reason": {"en": "Feeling constantly cold, dry skin, constipation (+2)", "hi": "ज्यादा ठंड लगना, त्वचा में रूखापन (+2)", "mr": "सतत थंडी वाजणे, त्वचा कोरडी पडणे (+2)"}},
+        {"id": "hair_loss", "points": 2, "condition": "symptoms.contains('hair_fall')", "reason": {"en": "Diffuse hair thinning across the scalp (+2)", "hi": "सिर से तेजी से बाल गिरना (+2)", "mr": "डोक्यावरचे केस विरळ होणे (+2)"}}
+      ],
+      "tests_to_discuss": [
+        "Thyroid Profile (TSH, Free T3, Free T4)",
+        "Anti-TPO Antibodies (if family history of Hashimoto's)"
+      ],
+      "regional_foods": {
+        "veg": ["Iodized Salt (in moderation)", "Brazil nuts or pumpkin seeds (Selenium)", "Sprouted moong"],
+        "non_veg": ["Marine fish (iodine-rich)", "Eggs"]
+      },
+      "why_midlife": {
+        "en": "Thyroid disorders peak in women aged 40-55 and closely mimic menopause symptoms like mood shifts, tiredness, and weight changes.",
+        "hi": "40 से 55 की उम्र में थायरॉइड और मेनोपॉज के लक्षण बिल्कुल एक जैसे लगते हैं, इसलिए रक्त जांच जरूरी है।",
+        "mr": "४० ते ५५ वयोगटात थायरॉईडचे आजार वाढतात आणि त्यांची लक्षणे मेनोपॉजसारखीच भासतात; म्हणून चाचणी घेणे हिताचे ठरते."
+      }
+    }
+  ]
+}

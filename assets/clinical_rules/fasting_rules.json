@@ -1,0 +1,91 @@
+{
+  "version": "1.0.0",
+  "disclaimer": "Cultural fasting safety and nutritional balance guidelines. Never replaces medical supervision.",
+  "festivals": [
+    {
+      "id": "ekadashi",
+      "name": {"en": "Ekadashi", "hi": "एकादशी", "mr": "एकादशी"},
+      "description": {"en": "Twice monthly fast observing grains and pulse restriction", "hi": "माह में दो बार अनाज व दालों का त्याग", "mr": "महिन्यातून दोनदा केली जाणारी धान्यविरहित उपासना"},
+      "common_style": "phalahar",
+      "tradition_foods": ["Rajgira (Amaranth) roti", "Bhagar (Vari rice)", "Shengdana (Peanut) amti", "Cucumber", "Curd"]
+    },
+    {
+      "id": "sankashti",
+      "name": {"en": "Sankashti Chaturthi", "hi": "संकष्टी चतुर्थी", "mr": "संकष्टी चतुर्थी"},
+      "description": {"en": "Monthly moonrise fast for Lord Ganesha", "hi": "चंद्रोदय तक उपवास", "mr": "चंद्रोदयापर्यंतचा उपवास"},
+      "common_style": "single_meal_evening",
+      "tradition_foods": ["Sabudana Khichdi (light)", "Modak / Sweet potato", "Fruit salad with roasted makhana"]
+    },
+    {
+      "id": "navratri",
+      "name": {"en": "Navratri (9 Days)", "hi": "नवरात्रि (९ दिन)", "mr": "नवरात्र (९ दिवस)"},
+      "description": {"en": "Nine days seasonal fasting in autumn and spring", "hi": "नौ दिनों का ऋतु संधिकाल उपवास", "mr": "नऊ दिवसांचे सलग व्रत"},
+      "common_style": "multi_day_phalahar",
+      "tradition_foods": ["Kuttu (Buckwheat) flour", "Singhara (Water chestnut) puri/roti", "Shakarkand (Sweet potato)", "Dahi"]
+    },
+    {
+      "id": "shravan_somwar",
+      "name": {"en": "Shravan Mondays", "hi": "सावन सोमवार", "mr": "श्रावण सोमवार"},
+      "description": {"en": "Monsoon weekly fast", "hi": "सावन माह के सोमवार का उपवास", "mr": "श्रावण महिन्यातील सोमवारचे उपोषण"},
+      "common_style": "single_meal_or_phalahar",
+      "tradition_foods": ["Ragi/Rajgira thalipeeth", "Milk & fruits", "Moong dal khichdi (if grain allowed)"]
+    },
+    {
+      "id": "karwa_chauth",
+      "name": {"en": "Karwa Chauth", "hi": "करवा चौथ", "mr": "करवा चौथ"},
+      "description": {"en": "Strict waterless dawn-to-moonrise fast", "hi": "सूर्योदय से चंद्रोदय तक निर्जला व्रत", "mr": "सूर्योदयापासून चंद्रोदयापर्यंतचा निर्जला उपवास"},
+      "common_style": "nirjala",
+      "tradition_foods": ["Pre-dawn Sargi (nuts, fruit, vermicelli)", "Moonrise break: water, warm milk, gentle khichdi"]
+    },
+    {
+      "id": "ramzan",
+      "name": {"en": "Ramadan / Roza", "hi": "रमज़ान / रोज़ा", "mr": "रमझान / रोजा"},
+      "description": {"en": "Dawn to dusk complete abstinence from food and water", "hi": "फज्र से मगरिब तक रोज़ा", "mr": "पहाटेपासून संध्याकाळपर्यंतचा रोजा"},
+      "common_style": "dawn_to_dusk",
+      "tradition_foods": ["Suhoor: whole oats, eggs, water, bananas", "Iftar: dates, lemon-water, haleem/soup, fruit chaat"]
+    },
+    {
+      "id": "paryushan",
+      "name": {"en": "Paryushan (Jain Fast)", "hi": "पर्युषण पर्व", "mr": "पर्युषण पर्व"},
+      "description": {"en": "Intensive spiritual fast with strict root vegetable restrictions", "hi": "कंदमूल व सूर्यास्त के बाद भोजन का पूर्ण त्याग", "mr": "कंदमुळे व रात्रीचे भोजन टाळून केले जाणारे व्रत"},
+      "common_style": "ayambil_or_upvas",
+      "tradition_foods": ["Boiled water during daylight", "Moong broth", "Dry snacks made from permitted pulses"]
+    }
+  ],
+  "contraindications": [
+    {
+      "condition": "diabetes_on_insulin_or_sulfonylurea",
+      "severity": "CRITICAL_CAUTION",
+      "guidance": {
+        "en": "Fasting while on insulin or medicines like Glimepiride carries a high risk of dangerous low blood sugar (hypoglycemia). Discuss meal timing and dose adjustment with your doctor first.",
+        "hi": "इंसुलिन या शुगर की तेज दवाओं के साथ उपवास करने से शुगर अचानक गिर सकती है। डॉक्टर से दवा का समय तय करके ही निर्णय लें।",
+        "mr": "इन्सुलिन किंवा मधुमेहाच्या गोळ्या चालू असताना उपाशी राहिल्यास रक्तातील साखर धोकादायक पातळीवर घसरू शकते. डॉक्टरांचा सल्ला नक्की घ्या."
+      }
+    },
+    {
+      "condition": "nirjala_with_hypertension_or_kidney",
+      "severity": "HIGH_CAUTION",
+      "guidance": {
+        "en": "Waterless (Nirjala) fasting can strain kidney filtration and concentrate blood pressure medicines. We gently advise choosing water-allowed phalahar if you have high BP or kidney concerns.",
+        "hi": "बिना पानी का निर्जला व्रत किडनी और ब्लड प्रेशर पर असर डाल सकता है। पानी और नींबू पानी युक्त फलाहार चुनना अधिक सुरक्षित है।",
+        "mr": "पाणी न पिता (निर्जला) उपवास केल्यास मूत्रपिंड व रक्तदाबावर ताण येतो. ताक, लिंबू पाणी किंवा फळे घेता येणारा पर्याय निवडावा."
+      }
+    }
+  ],
+  "plate_builder": {
+    "steady_energy": ["Rajgira (Amaranth) flour thalipeeth", "Sweet potato (boiled/roasted with jeera)", "Vari rice / Samak rice"],
+    "protein_power": ["Roasted peanuts (Shengdana)", "Homemade Paneer cubes", "Roasted Makhana", "Curd / Greek yogurt"],
+    "hydration": ["Chaas (Buttermilk) with rock salt", "Coconut water", "Kokum water (sugar-free)"],
+    "go_easy_on": ["Excessive fried sabudana wada", "Heavy sugar syrups", "Deep-fried potato chips"]
+  },
+  "break_fast_tips": {
+    "en": "Break your fast gently: Start with a glass of water or fresh coconut water and 1-2 soaked dates. Avoid diving straight into heavy, deep-fried foods to prevent sharp blood sugar surges and acidity.",
+    "hi": "व्रत खोलते समय: सबसे पहले एक गिलास सादा या नारियल पानी और 1-2 खजूर लें। सीधे तेल-मसालेदार भोजन करने से पेट में जलन और शुगर बढ़ सकती है।",
+    "mr": "उपवास सोडताना: सुरुवातीला एक ग्लास कोमट पाणी किंवा शहाळ्याचे पाणी व खजूर घ्या. एकदम तळलेले किंवा जड अन्न खाल्ल्यास पित्त व रक्तातील साखर वेगाने वाढू शकते."
+  },
+  "emergency_break": {
+    "en": "If you experience shakiness, cold sweats, extreme dizziness, or heart racing, break your fast immediately with glucose water, fruit juice, or salt-sugar lime water and sit down.",
+    "hi": "यदि हाथ कांपने लगें, ठंडा पसीना आए, चक्कर आए या दिल जोर से धड़के, तो तुरंत व्रत तोड़कर मीठा-नमकीन पानी या फल लें।",
+    "mr": "हात थरथरणे, गार घाम येणे, तीव्र चक्कर येणे किंवा छातीत धडधडल्यास तत्काळ उपवास सोडून लिंबू-मीठ-साखरेचे पाणी प्यावे आणि शांत बसावे."
+  }
+}

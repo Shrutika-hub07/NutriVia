@@ -1,0 +1,66 @@
+{
+  "version": "1.0.0",
+  "disclaimer": "Medicine-Nutrient Safety Interactions. Non-prescriptive warnings only. Never advises starting, stopping, or altering doses.",
+  "interactions": [
+    {
+      "id": "metformin_b12",
+      "medicine_classes": ["metformin", "glycomet", "glucophage"],
+      "affected_nutrient": "Vitamin B12",
+      "mechanism": "Long-term use (>3-4 years) impairs calcium-dependent ileal membrane uptake of the intrinsic factor-B12 complex.",
+      "guidance": {
+        "en": "If you have taken Metformin for more than a year, ask your doctor or pharmacist about checking your Vitamin B12 levels periodically, especially if you experience tingling in hands or feet.",
+        "hi": "यदि आप एक वर्ष से अधिक समय से मेटफॉर्मिन ले रही हैं, तो अपने डॉक्टर से विटामिन B12 की जांच कराने के बारे में बात करें, खासकर यदि हाथ-पैरों में झनझनाहट हो।",
+        "mr": "तुम्ही एका वर्षापेक्षा जास्त काळ मेटफॉर्मिन गोळी घेत असाल, तर डॉक्टरांच्या सल्ल्याने व्हिटॅमिन B12 ची तपासणी करून घ्या, विशेषतः हात-पायात मुंग्या येत असल्यास."
+      },
+      "action": "DISCUSS_WITH_DOCTOR"
+    },
+    {
+      "id": "antacid_b12_iron_calcium",
+      "medicine_classes": ["omeprazole", "pantoprazole", "rabeprazole", "esomeprazole", "pan-d", "pantocid", "ranitidine", "famotidine"],
+      "affected_nutrient": "Vitamin B12, Iron, Calcium, Magnesium",
+      "mechanism": "Proton pump inhibitors suppress gastric acid secretion, which is required to cleave B12 from dietary protein and solubilize non-heme iron and calcium carbonate.",
+      "guidance": {
+        "en": "Frequent or daily acid reducers can reduce stomach acid needed to absorb B12, Iron, and Calcium from food. Mention this duration to your doctor.",
+        "hi": "एसिडिटी की दवाएं रोजाना लेने से भोजन से B12, आयरन और कैल्शियम पचने में रुकावट आ सकती है। इस बारे में डॉक्टर को जरूर बताएं।",
+        "mr": "ऍसिडिटीच्या गोळ्या सतत घेतल्यास आहारातील B12, लोह आणि कॅल्शियम शरीरात पूर्ण शोषले जात नाही. याबद्दल डॉक्टरांशी चर्चा करा."
+      },
+      "action": "DISCUSS_WITH_DOCTOR"
+    },
+    {
+      "id": "thyroxine_calcium_iron_timing",
+      "medicine_classes": ["levothyroxine", "thyronorm", "eltroxin", "thyrox"],
+      "affected_nutrient": "Calcium & Iron Supplement Timing",
+      "mechanism": "Calcium carbonate and ferrous iron bind to levothyroxine in the gut lumen, creating an insoluble chelate that prevents thyroid hormone absorption.",
+      "guidance": {
+        "en": "Crucial timing tip: Take thyroid medication on an empty stomach with plain water. Keep at least a 4-hour gap before taking Calcium, Iron supplements, or heavy dairy.",
+        "hi": "महत्वपूर्ण नियम: थायरॉइड की गोली सुबह खाली पेट केवल पानी के साथ लें। कैल्शियम या आयरन की गोली और दूध से कम से कम 4 घंटे का अंतर रखें।",
+        "mr": "महत्त्वाची सूचना: थायरॉईडची गोळी सकाळी उपाशीपोटी फक्त पाण्यासोबत घ्यावी. कॅल्शियम किंवा लोहाची गोळी आणि दूध यामध्ये किमान ४ तासांचे अंतर ठेवावे."
+      },
+      "action": "TIMING_SAFETY_TIP"
+    },
+    {
+      "id": "statin_coq10_muscle",
+      "medicine_classes": ["atorvastatin", "rosuvastatin", "atorva", "rozavel"],
+      "affected_nutrient": "Coenzyme Q10 & Muscle Comfort",
+      "mechanism": "HMG-CoA reductase inhibitors block the mevalonate pathway, which synthesizes both cholesterol and CoQ10 in muscle mitochondria.",
+      "guidance": {
+        "en": "If you notice new or unusual calf or upper arm muscle soreness while taking cholesterol medicines, do not stop your pill on your own; consult your prescriber to evaluate your CK levels or adjust timing.",
+        "hi": "यदि कोलेस्ट्रॉल की दवा लेने के दौरान पिंडलियों या बांहों में नया दर्द महसूस हो, तो अपने आप दवा बंद न करें; अपने डॉक्टर से परामर्श लें।",
+        "mr": "कोलेस्टेरॉलची गोळी सुरू असताना स्नायूंमध्ये नवीन दुखणे सुरू झाल्यास स्वतःहून गोळी बंद करू नका; डॉक्टरांना दाखवून सल्ला घ्या."
+      },
+      "action": "DISCUSS_WITH_DOCTOR"
+    },
+    {
+      "id": "diuretic_potassium_magnesium",
+      "medicine_classes": ["hydrochlorothiazide", "chlorthalidone", "furosemide", "lasix"],
+      "affected_nutrient": "Potassium, Magnesium, Hydration",
+      "mechanism": "Promotes renal excretion of sodium, potassium, and magnesium ions.",
+      "guidance": {
+        "en": "Water-loss pills for blood pressure can deplete potassium and magnesium. If you feel frequent muscle spasms, dizziness, or palpitations, ask your doctor about an electrolyte panel.",
+        "hi": "ब्लड प्रेशर की कुछ दवाएं शरीर से पोटेशियम और मैग्नीशियम कम कर सकती हैं। अधिक ऐंठन या चक्कर आने पर डॉक्टर से इलेक्ट्रोलाइट जांच पर चर्चा करें।",
+        "mr": "रक्तदाबाच्या लघवी वाढवणाऱ्या गोळ्यांमुळे शरीरातील पोटॅशियम व मॅग्नेशियम कमी होऊ शकते. गोळे येणे किंवा भोवळ आल्यास डॉक्टरांना सांगा."
+      },
+      "action": "DISCUSS_WITH_DOCTOR"
+    }
+  ]
+}

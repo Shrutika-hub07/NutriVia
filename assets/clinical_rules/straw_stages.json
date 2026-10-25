@@ -1,0 +1,102 @@
+{
+  "version": "1.0.0",
+  "disclaimer": "Simplified STRAW+10 (Stages of Reproductive Aging Workshop) staging with deliberate uncertainty ranges. For educational awareness only; not a diagnostic determination.",
+  "stages": [
+    {
+      "id": "premenopause",
+      "name": {
+        "en": "Premenopause (Reproductive Stage)",
+        "hi": "प्रीमेनोपॉज़ (नियमित चक्र)",
+        "mr": "प्रीमेनोपॉज (नियमित मासिक पाळी)"
+      },
+      "description": {
+        "en": "Cycles remain regular without persistent changes in length or flow.",
+        "hi": "माहवारी नियमित समय पर आती है, प्रवाह में कोई स्थायी बदलाव नहीं है।",
+        "mr": "मासिक पाळी नियमित वेळेवर येते आणि रक्तस्त्राव सामान्य असतो."
+      },
+      "clinical_criteria": "Variable cycle difference < 7 days over consecutive cycles. Age usually under 45."
+    },
+    {
+      "id": "early_perimenopause",
+      "name": {
+        "en": "Early Perimenopause",
+        "hi": "शुरुआती पेरीमेनोपॉज़",
+        "mr": "सुरुवातीचा पेरिमेनोपॉज"
+      },
+      "description": {
+        "en": "Cycle length begins to vary by 7 or more days between consecutive periods. Occasional mild hot flashes or mood changes may emerge.",
+        "hi": "दो माहवारी के बीच 7 या अधिक दिनों का अंतर दिखने लगता है। हल्के गर्म झोंके (हॉट फ्लैश) या चिड़चिड़ापन महसूस हो सकता है।",
+        "mr": "दोन पाळीच्या दिवसांत ७ किंवा त्याहून अधिक दिवसांचा फरक पडू लागतो. अधूनमधून उष्णतेची लाट किंवा चिडचिड जाणवू शकते."
+      },
+      "clinical_criteria": "Persistent difference of >= 7 days in length of consecutive cycles."
+    },
+    {
+      "id": "late_perimenopause",
+      "name": {
+        "en": "Late Perimenopause",
+        "hi": "उत्तर पेरीमेनोपॉज़ (अंतिम बदलाव)",
+        "mr": "उत्तर पेरिमेनोपॉज (पाळीतील मोठे खंड)"
+      },
+      "description": {
+        "en": "Marked menstrual irregularity with gaps of 60 days or more between cycles. Vasomotor symptoms (hot flashes, night sweats) and sleep disruptions are typically most pronounced.",
+        "hi": "दो माहवारी के बीच 60 दिन या अधिक का लंबा अंतर। रात में पसीना, अचानक तेज गर्मी और नींद में खलल अधिक हो सकते हैं।",
+        "mr": "दोन पाळींमध्ये ६० दिवस किंवा त्याहून अधिक मोठा खंड पडतो. रात्री घाम येणे, अचानक अंगाची लाही होणे आणि निद्रानाश अधिक जाणवतो."
+      },
+      "clinical_criteria": "Amenorrhea interval of >= 60 days."
+    },
+    {
+      "id": "menopause",
+      "name": {
+        "en": "Menopause (The Milestone)",
+        "hi": "मेनोपॉज़ (माहवारी की स्थायी निवृत्ति)",
+        "mr": "मेनोपॉज (मासिक पाळीची पूर्ण निवृत्ती)"
+      },
+      "description": {
+        "en": "Confirmed retrospectively after exactly 12 consecutive months without any menstrual bleeding (in the absence of surgical or medical causes).",
+        "hi": "लगातार 12 महीनों तक बिना किसी ब्लीडिंग के रहने के बाद ही मेनोपॉज़ की पुष्टि मानी जाती है।",
+        "mr": "सलग १२ महिने एकही मासिक पाळी न आल्यानंतरच मेनोपॉजची अधिकृत नोंद केली जाते."
+      },
+      "clinical_criteria": "12 consecutive months of amenorrhea with no pathological cause."
+    },
+    {
+      "id": "postmenopause",
+      "name": {
+        "en": "Postmenopause",
+        "hi": "पोस्टमेनोपॉज़",
+        "mr": "पोस्टमेनोपॉज"
+      },
+      "description": {
+        "en": "The stage of life following the 12-month menopause milestone. Bone mineral preservation, metabolic vigilance, and cardiovascular protection take center stage.",
+        "hi": "मेनोपॉज़ के 12 महीने बाद का जीवन। इस दौरान हड्डियों की सुरक्षा, दिल का ख्याल और नियमित जांच आवश्यक हैं।",
+        "mr": "मेनोपॉजनंतरचा काळ. या काळात हाडांची घनता, हृदयाचे आरोग्य आणि वार्षिक तपासण्यांना सर्वाधिक प्राधान्य द्यावे."
+      },
+      "clinical_criteria": "> 12 months post final menstrual period."
+    }
+  ],
+  "gynaecologist_escalations": [
+    {
+      "trigger": "bleeding_after_menopause",
+      "warning": {
+        "en": "Any bleeding after menopause warrants a same-day or urgent ultrasound and gynaecological check to evaluate the endometrial lining.",
+        "hi": "मेनोपॉज़ के बाद किसी भी तरह का रक्तस्त्राव होने पर तुरंत सोनोग्राफी व डॉक्टर से जांच करवाएं।",
+        "mr": "मेनोपॉजनंतर थोडाही रक्तस्त्राव झाल्यास गर्भाशयाच्या अस्तराची तपासणी (सोनोग्राफी) करण्यासाठी त्वरित डॉक्टरांना भेटा."
+      }
+    },
+    {
+      "trigger": "cycles_shorter_than_21_days",
+      "warning": {
+        "en": "Cycles occurring closer than 21 days apart can precipitate iron-deficiency anaemia quickly. Discuss cycle regulation with your doctor.",
+        "hi": "21 दिनों से कम समय में माहवारी दोबारा आना एनीमिया का कारण बन सकता है। डॉक्टर से सलाह लें।",
+        "mr": "२१ दिवसांपेक्षा कमी अंतराने पाळी वारंवार आल्यास तीव्र ॲनिमिया होऊ शकतो. डॉक्टरांचा सल्ला घ्या."
+      }
+    },
+    {
+      "trigger": "menopause_before_40",
+      "warning": {
+        "en": "Periods cessation before age 40 indicates Premature Ovarian Insufficiency (POI) and requires specialized bone and cardiovascular protection protocols.",
+        "hi": "40 वर्ष की आयु से पहले माहवारी का बंद होना प्रीमैच्योर ओवेरियन इनसफिशिएंसी हो सकता है। विशेषज्ञ की देखरेख जरूरी है।",
+        "mr": "वयाच्या ४० वर्षांपूर्वी मासिक पाळी बंद झाल्यास हाडे आणि हृदयाच्या आरोग्यासाठी तज्ज्ञ डॉक्टरांचे मार्गदर्शन आवश्यक असते."
+      }
+    }
+  ]
+}
