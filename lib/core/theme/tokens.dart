@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class NutriviaColors {
   // Brand Palette (from design tokens)
-  static const Color plum = Color(0xFF5B2A86);         // Primary brand, key buttons, headings on light
+  static const Color plum = Color(0xFF5B2A86);         // Primary brand, key buttons, headings on light  
   static const Color nightPlum = Color(0xFF2D1B42);    // Dark surfaces, Calm Space night mode, text on light
   static const Color deepPlum = Color(0xFF3B1A5A);     // Dark gradients and pressed states
   static const Color marigold = Color(0xFFE07B39);     // Accent, highlights, voice button, active petals
